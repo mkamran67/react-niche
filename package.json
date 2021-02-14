@@ -1,0 +1,8 @@
+{
+  "name": "react-niche",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:mkamran67/react-niche.git",
+  "author": "Muhammad Kamran <mkamran1967@gmail.com>",
+  "license": "MIT"
+}
