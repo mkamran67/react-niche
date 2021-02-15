@@ -12,7 +12,7 @@ const app = express(); // App init
 connectDB(); // Starts connection to Mongo Database
 
 const PORT = process.env.PORT || 3000;
-const devMode = process.env.NODE_ENV === 'developement' ? true : false;
+const devMode = process.env.NODE_ENV === 'development' ? true : false;
 
 if (devMode) {
   app.use(morgan('dev')); // Morgan is for loggin in developement mode
@@ -25,8 +25,6 @@ if (!devMode) {
   app.get('*', (req, res) => {
     res.sendFile(path.resolve(__dirnamem, 'frontend', 'build', 'index.html'));
   });
-} else {
-  console.log(`Developement mode 💻`);
 }
 
 app.listen(PORT, () => {

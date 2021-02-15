@@ -11,6 +11,8 @@ interface UserPayload {
   token: string | null;
 }
 
+// Local Storage Grab
+
 const initialState: UserState = {
   name: null,
   token: null,
